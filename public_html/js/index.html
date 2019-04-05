@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<title>A Quiet Street Gallery</title>
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+		<script>
+function checkForMobile () {
+	if(!/Android|webOS|iPhone|iPad/i.test
+			(navigator.userAgent)){
+		$("border").addClass("border");
+	}
+	$(document).ready(function() {
+		checkForMobile();
+	});
+		</script>
+<style>
+.border { background-image:url("./images/iphone.png"); height:1334px;
+	width:750px;}
+</head>
+<body>
+
+<div data-role="page">
+<div data-role="header">
+<h1>A Quiet Street Gallery</h1>
+</div>
+<img src="../images/iphone.png" alt="logo" style=height:100%;">
+<div data-role="content">
+<p><ul>
+<li><a href="../artists.html">Our Artists</li>
+<li><a href="../ArtSalon.html">Art Salon</li>
+<li><a href="https://www.amazon.com/shops/aquietstreetgallery">Shop</li>
+</ul></p>
+</div>
+</div>
+
+</body>
+</html>
+
